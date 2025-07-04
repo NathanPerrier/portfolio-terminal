@@ -2,9 +2,8 @@
 
 A terminal-style portfolio website built with Vite and terminal.css. Navigate through my projects, skills, and experience using classic command-line interface.
 
-## 📸 Preview
 
-<img src="./public/preview.png" height="400px">
+<img src="./public/preview.png" height="500px" style="left:50%">
 
 ## 🚀 Live Demo
 
