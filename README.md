@@ -4,7 +4,7 @@ A terminal-style portfolio website built with Vite and terminal.css. Navigate th
 
 ## 📸 Preview
 
-<img src="preview.png" height="400px">
+<img src="./public/preview.png" height="400px">
 
 ## 🚀 Live Demo
 
