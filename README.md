@@ -2,6 +2,10 @@
 
 A terminal-style portfolio website built with Vite and terminal.css. Navigate through my projects, skills, and experience using classic command-line interface.
 
+## 📸 Preview
+
+<img src="preview.png" height="400px">
+
 ## 🚀 Live Demo
 
 Visit the live site to explore the terminal interface.
@@ -51,12 +55,12 @@ Visit the live site to explore the terminal interface.
 | `cat` | Display file contents | `cat about.txt` |
 | `cd` | Change directory | `cd projects` or `cd ..` |
 | `pwd` | Print working directory | `pwd` |
-| `clear` | Clear the terminal screen | `clear` |
+| `clear` | Clear terminal or history | `clear terminal` or `clear history` |
 | `whoami` | Display current user | `whoami` |
 | `date` | Show current date and time | `date` |
 | `echo` | Print text to terminal | `echo Hello World` |
-| `matrix` | Enter the Matrix rain effect | `matrix` (press Q to exit) |
-| `snake` | Play a classic Snake game | `snake` (use arrow keys) |
+| `matrix.exe` | Enter the Matrix rain effect | `matrix.exe` (press Q to exit) |
+| `snake.exe` | Play a classic Snake game | `snake.exe` (use arrow keys) |
 | `banner` | Display ASCII art banner | `banner` |
 | `neofetch` | Show system information | `neofetch` |
 | `theme` | Change terminal color theme | `theme ocean` |
@@ -114,20 +118,40 @@ npm run deploy
 
 To customize the portfolio content:
 
-1. Edit the file system structure in `src/main.js`
-2. Update the text content in the `fileSystem` object
-3. Add new commands by extending the `commands` object
-4. Modify styles in `src/css/style.css`
+1. Edit the file system structure in `src/fileSystem.json`
+2. Update the text content in the JSON file
+3. Add new commands in `src/commands.js`
+4. Modify styles in `src/style.css`
+5. Add new themes in `src/utils/theme.js`
+6. Create new games in `src/games/`
 
 ## 🎨 Color Themes
 
 ### Available Themes:
+
+**Classic Themes:**
 - **matrix** (default) - Classic green on black terminal
 - **ocean** - Cyan and blue ocean theme  
 - **retro** - Warm retro terminal colors
 - **hacker** - High contrast green theme
 
-Use `theme <name>` to switch themes.
+**Developer Themes:**
+- **nes** - Nintendo Game Boy green monochrome
+- **nord** - Arctic-inspired blue-grey palette
+- **solarized** - Precision colors for readability
+- **monokai** - Classic Sublime Text theme
+
+**Creative Themes:**
+- **cyberpunk** - Neon pink and cyan
+- **forest** - Natural green tones
+- **sunset** - Warm orange and red hues
+- **arctic** - Light theme with cool blues
+- **volcano** - Fiery orange and red
+- **galaxy** - Purple and lavender space theme
+- **mint** - Fresh green mint colors
+- **coffee** - Warm brown coffee tones
+
+Use `theme <name>` to switch themes. Theme preference is saved automatically.
 
 ### Default Colors:
 - Background: Black (`#000`)
