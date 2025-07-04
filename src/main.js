@@ -9,6 +9,7 @@ import { createBasicCommands } from './commands.js';
 import { loadSavedTheme, createThemeCommand } from './utils/theme.js';
 import { loadCommandHistory, saveCommandHistory } from './utils/storage.js';
 import { resolvePath, getFileSystemItem, updatePrompt } from './utils/filesystem.js';
+import { startLoader } from './loader.js';
 
 // Terminal state
 const state = {
@@ -149,13 +150,16 @@ terminalInput.addEventListener('keydown', (e) => {
 });
 
 // Initialize terminal
-function initialize() {
+async function initialize() {
+  // Load saved theme first so loader uses correct colors
+  loadSavedTheme();
+  
+  // Start loader animation
+  await startLoader();
+  
   // Load command history
   state.commandHistory = loadCommandHistory();
   state.historyIndex = state.commandHistory.length;
-  
-  // Load saved theme
-  loadSavedTheme();
   
   // Focus on input
   terminalInput.focus();

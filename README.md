@@ -30,6 +30,7 @@ Visit the live site to explore the terminal interface.
 - **System Information** - Neofetch-style system info display
 - **Responsive Design** - Works on desktop and mobile devices
 - **Input/Theme History** - Remembers previous history and aplies on launch
+- **Matrix style Load Animation** - Animated loading effects
 
 ## 🗂️ File System Structure
 
