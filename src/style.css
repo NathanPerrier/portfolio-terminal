@@ -112,6 +112,7 @@ body {
   font-family: 'Press Start 2P', monospace !important;
   font-size: 12px;
   outline: none;
+  text-transform: lowercase;
   flex: 1;
   line-height: 1.4;
 }
