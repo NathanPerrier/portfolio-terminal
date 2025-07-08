@@ -118,7 +118,7 @@ function getAutocompleteOptions(partial) {
 terminalInput.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {
     e.preventDefault();
-    processCommand(terminalInput.value);
+    processCommand(terminalInput.value.toLowerCase());
     terminalInput.value = '';
   } else if (e.key === 'Tab') {
     e.preventDefault();

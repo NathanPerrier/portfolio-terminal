@@ -122,6 +122,7 @@ input.terminal-input,
 input.terminal-input:focus,
 input.terminal-input:active {
   font-family: 'Press Start 2P', monospace !important;
+  text-transform: lowercase;
 }
 
 
